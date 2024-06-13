@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("backgroundMecha.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    color: #FFFFFF;
+    font-family: 'open sans';
+    overflow: hidden;
+}
+
+.mainVisual{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+h1{
+    font-size: 50px;
+    margin-top: 2%;
+    background-color: #00093ad8;
+    border-radius: 15px;
+}
+.calculadora{
+    height: 1000px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00093ad8;
+    border-radius: 15px;
+    margin-top: 8.5%;
+}
+.calculate{
+    position: absolute;
+    top: 39%;
+    left: 51.25%;
+    transform: translate(-50%, 15%);
+    padding: 10px;
+    order: -1;
+}
+input{
+    outline: none;
+    box-sizing: border-box;
+    height: 55px;
+    width: 0px;
+    padding: 0 20px;
+    color: #000000;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    font-size: 30px;
+    border: 1px solid #ffffff;
+    transition: all .7s ease;
+}
+::placeholder{
+    color: grey;
+}
+.calculateButton{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100px;
+    height: 75px;
+    background: #02a3e2;
+    line-height: 70px;
+    border-radius: 25%;
+    text-align: center;
+    cursor: pointer;
+    transition: all .7s ease;
+    font-size: 20px;
+}
+.calculate:hover input{
+    width: 350px;
+}
+.calculateButton:hover{
+    transform: scale(1.15);
+}
+
+
+
+.result{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: black;
+    background: #ffffff;
+    top: 58%;
+    padding: 0 20px;
+    height: 75px;
+    width: 300px;
+    font-size: 24px;
+    font-weight: bold;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+}
+
+
+
+.creditos{
+    position: absolute;
+    background-color: #003e57;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    opacity: 0.5;
+    text-align: center;
+}
